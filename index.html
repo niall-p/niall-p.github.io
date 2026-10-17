@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pen2Vault</title>
+<meta name="description" content="Pen2Vault turns handwritten reMarkable pages emailed to my own Gmail into Obsidian notes, on my own computer.">
+<style>
+  :root { --bg: #f6f7f6; --fg: #1b1d1c; --muted: #5b625f; --rule: #d6dad7; --accent: #2c5d73; color-scheme: light dark; }
+  @media (prefers-color-scheme: dark) { :root { --bg: #151817; --fg: #e6e9e7; --muted: #9aa39f; --rule: #333a37; --accent: #7fb5cc; } }
+  body { margin: 0; background: var(--bg); color: var(--fg); font: 17px/1.6 -apple-system, "Segoe UI", Helvetica, Arial, sans-serif; }
+  main { max-width: 38rem; margin: 0 auto; padding: 3rem 1rem 4rem; }
+  h1 { font-family: Georgia, "Times New Roman", serif; font-size: 2.2rem; margin: 0 0 .25rem; }
+  h2 { font-size: 1.1rem; margin: 2rem 0 .5rem; }
+  .lede { color: var(--muted); margin-top: 0; }
+  a { color: var(--accent); }
+  ol { padding-left: 1.3rem; }
+  footer { margin-top: 3rem; padding-top: 1rem; border-top: 1px solid var(--rule); color: var(--muted); font-size: .9rem; }
+</style>
+</head>
+<body>
+<main>
+  <h1>Pen2Vault</h1>
+  <p class="lede">A personal tool that turns handwritten notes into Obsidian notes.</p>
+
+  <p>Pen2Vault is a private project with one user: its author. It is not a public service, and
+  no one else can sign up.</p>
+
+  <h2>What it does</h2>
+  <ol>
+    <li>I write notes on a reMarkable tablet and share a page by email to my own Gmail address.</li>
+    <li>Pen2Vault, running on my own computer, uses the Gmail API to find those emails and download the attached page image.</li>
+    <li>A handwriting-recognition model running locally on the same computer transcribes the page to Markdown.</li>
+    <li>The note is saved into my Obsidian notes folder, and the email is labelled as processed.</li>
+  </ol>
+
+  <h2>Google account access</h2>
+  <p>Pen2Vault asks for the Gmail scope <code>gmail.modify</code>, which lets it read messages and change their labels.
+  It only acts on emails sent from reMarkable's sharing service to a dedicated address of mine.
+  It never sends or deletes email, and nothing it reads leaves my computer.
+  See the <a href="privacy.html">privacy policy</a> for details.</p>
+
+  <footer>
+    <a href="privacy.html">Privacy policy</a> · Contact: <a href="mailto:niallpiggot@gmail.com">niallpiggot@gmail.com</a>
+  </footer>
+</main>
+</body>
+</html>

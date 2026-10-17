@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pen2Vault Privacy Policy</title>
+<style>
+  :root { --bg: #f6f7f6; --fg: #1b1d1c; --muted: #5b625f; --rule: #d6dad7; --accent: #2c5d73; color-scheme: light dark; }
+  @media (prefers-color-scheme: dark) { :root { --bg: #151817; --fg: #e6e9e7; --muted: #9aa39f; --rule: #333a37; --accent: #7fb5cc; } }
+  body { margin: 0; background: var(--bg); color: var(--fg); font: 17px/1.6 -apple-system, "Segoe UI", Helvetica, Arial, sans-serif; }
+  main { max-width: 38rem; margin: 0 auto; padding: 3rem 1rem 4rem; }
+  h1 { font-family: Georgia, "Times New Roman", serif; font-size: 2rem; margin: 0 0 .25rem; }
+  h2 { font-size: 1.1rem; margin: 2rem 0 .5rem; }
+  .meta { color: var(--muted); margin-top: 0; }
+  a { color: var(--accent); }
+  ul { padding-left: 1.3rem; }
+  footer { margin-top: 3rem; padding-top: 1rem; border-top: 1px solid var(--rule); color: var(--muted); font-size: .9rem; }
+</style>
+</head>
+<body>
+<main>
+  <h1>Privacy policy</h1>
+  <p class="meta">Pen2Vault · Last updated 17 October 2026</p>
+
+  <p>Pen2Vault is a personal tool used only by its author, Niall Piggot, on his own Google account.
+  This policy explains what it does with Google user data.</p>
+
+  <h2>Data it accesses</h2>
+  <p>With the Gmail scope <code>https://www.googleapis.com/auth/gmail.modify</code>, Pen2Vault:</p>
+  <ul>
+    <li>searches for emails sent from <code>my@remarkable.com</code> to one dedicated address of mine that have a PNG image attached;</li>
+    <li>reads those messages' headers (sender, recipient, date, subject and Gmail's authentication results) to confirm they are genuine shares from my reMarkable tablet;</li>
+    <li>downloads their PNG attachments;</li>
+    <li>creates the labels <code>pen2vault/done</code> and <code>pen2vault/error</code> and applies them to messages it has processed.</li>
+  </ul>
+  <p>It does not send email, delete email, or act on any other messages.</p>
+
+  <h2>How the data is used</h2>
+  <p>Downloaded page images are transcribed into text by a model that runs entirely on my own computer.
+  The resulting notes are saved to my local Obsidian notes folder. Copies of the page images and draft
+  transcriptions are kept on the same computer and may be used to improve that same personal
+  handwriting model, which runs only on my computer and is not shared or offered to anyone else.</p>
+
+  <h2>Storage and sharing</h2>
+  <ul>
+    <li>All data is processed and stored only on my own computer. Nothing is sent to any server other than Google's Gmail API.</li>
+    <li>No data is sold, shared, or transferred to third parties, and none is used for advertising.</li>
+    <li>The OAuth token is stored in a local file that only my user account can read.</li>
+  </ul>
+
+  <h2>Google API Services User Data Policy</h2>
+  <p>Pen2Vault's use and transfer of information received from Google APIs adheres to the
+  <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>,
+  including the Limited Use requirements.</p>
+
+  <h2>Revoking access and deleting data</h2>
+  <p>Access can be revoked at any time from <a href="https://myaccount.google.com/permissions">Google Account → Third-party apps &amp; services</a>.
+  Locally stored images, notes and the token can be deleted by removing the files from my computer.</p>
+
+  <h2>Contact</h2>
+  <p>Questions about this policy: <a href="mailto:niallpiggot@gmail.com">niallpiggot@gmail.com</a></p>
+
+  <footer><a href="index.html">Pen2Vault home</a></footer>
+</main>
+</body>
+</html>
